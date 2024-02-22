@@ -1,9 +1,22 @@
 import { users } from "../db";
-import {Link} from 'react-router-dom';
+import {Link, useSearchParams} from 'react-router-dom';
 
 function Home() {
     // const users: any = [];
     // return <h1>{users[0].name}</h1>;
+
+    const [readSearchParams, setSearchParams] = useSearchParams();
+    console.log(readSearchParams)
+    console.log(readSearchParams.has("age"))
+    console.log(readSearchParams.get("age"))
+
+    // setTimeout(() => {
+    //     setSearchParams({
+    //         name: "yse",
+    //         age: "30",
+    //     })
+    // }, 3000);
+
     return (
         <div>
             <ul>
