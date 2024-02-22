@@ -1,11 +1,6 @@
 function Home() {
-    const test:any = [];
-    return (
-        <>
-            <h1>Home</h1>
-            <p>{test[3].errorrrr}</p>
-        </>
-    );
+    const users: any = [];
+    return <h1>{users[0].name}</h1>;
 }
 
 export default Home;
